@@ -54,4 +54,260 @@ li {
   font-family: cursive;
   font-size: 14px;
 }
+
+/* IMPORT REGISTRATION FORM STYLE */
+section#form-section .form-container {
+  width: 480px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+section#form-section .form-container .form-header .form-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+section#form-section .form-container .form-header .show-error {
+  background-color: #dc3545;
+  margin: 10px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: none;
+}
+
+section#form-section .form-container .form-header .show-error .error-message {
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+section#form-section .form-container form#input-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#form-section .form-container form#input-form .form-control {
+  padding: 0 10px;
+  position: relative;
+}
+
+section#form-section .form-container form#input-form .form-control label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+section#form-section .form-container form#input-form .form-control input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #292b2c;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+section#form-section .form-container form#input-form .form-control input:focus {
+  outline: none;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+section#form-section .form-container form#input-form .form-control i {
+  position: absolute;
+  top: 42px;
+  right: 20px;
+  visibility: hidden;
+}
+
+section#form-section .form-container form#input-form .form-control small {
+  font-size: 0.8rem;
+  font-family: cursive;
+  color: #dc3545;
+  visibility: hidden;
+}
+
+section#form-section .form-container form#input-form .form-control select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #292b2c;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+section#form-section .form-container form#input-form .form-control select:focus {
+  outline: none;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+section#form-section .form-container form#input-form .form-control textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #292b2c;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+section#form-section .form-container form#input-form .form-control textarea:focus {
+  outline: none;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+section#form-section .form-container form#input-form .form-control #agree-tac {
+  position: absolute;
+  right: 222px;
+  margin-top: 5px;
+}
+
+section#form-section .form-container form#input-form .form-control .message-tac {
+  font-size: 1.1rem;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+section#form-section .form-container form#input-form .form-control.success label {
+  color: #28a745;
+}
+
+section#form-section .form-container form#input-form .form-control.success input {
+  border: 2px solid #28a745;
+}
+
+section#form-section .form-container form#input-form .form-control.success i.uil-check-circle {
+  visibility: visible;
+  color: #28a745;
+}
+
+section#form-section .form-container form#input-form .form-control.success .uil-exclamation-circle {
+  visibility: hidden;
+}
+
+section#form-section .form-container form#input-form .form-control.error label {
+  color: #dc3545;
+}
+
+section#form-section .form-container form#input-form .form-control.error input {
+  border: 2px solid #dc3545;
+}
+
+section#form-section .form-container form#input-form .form-control.error i.uil-check-circle {
+  visibility: hidden;
+}
+
+section#form-section .form-container form#input-form .form-control.error .uil-exclamation-circle {
+  visibility: visible;
+  color: #dc3545;
+}
+
+section#form-section .form-container form#input-form .form-control.error small {
+  visibility: visible;
+}
+
+section#form-section .form-container form#input-form button.submit {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 20px;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-left: 50px;
+  background-color: #ffffff;
+  border: 2px solid #292b2c;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+section#form-section .form-container form#input-form button.submit:hover {
+  color: #ffffff;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+section#form-section .form-container form#input-form button.disabled {
+  color: #808080;
+  border: 2px solid #808080;
+}
+
+section#form-section .form-container form#input-form button.disabled:hover {
+  color: #292b2c;
+  background-color: #ffffff;
+  border: 2px solid #292b2c;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
 /*# sourceMappingURL=style.css.map */

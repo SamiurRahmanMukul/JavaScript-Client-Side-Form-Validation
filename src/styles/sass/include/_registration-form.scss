@@ -1,0 +1,260 @@
+section#form-section {
+  .form-container {
+    width: 480px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    // form header
+    .form-header {
+      // form title
+      .form-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+      }
+
+      // server side validation error message
+      .show-error {
+        background-color: $danger-color;
+        margin: 10px 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        display: none;
+
+        // error message
+        .error-message {
+          font-size: 1rem;
+          text-align: center;
+          color: $white-color;
+        }
+      }
+    }
+
+    // form field
+    form#input-form {
+      justify-content: center;
+      align-items: center;
+
+      .form-control {
+        padding: 0 10px;
+        position: relative;
+
+        // input label
+        label {
+          display: block;
+          font-size: 1.4rem;
+          font-weight: bold;
+          text-transform: capitalize;
+        }
+
+        // input field
+        input {
+          width: 100%;
+          padding: 10px;
+          border: 2px solid $inverse-color;
+          font-size: 1rem;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          transition: $main-transition;
+          -webkit-transition: $main-transition;
+          -moz-transition: $main-transition;
+          -ms-transition: $main-transition;
+          -o-transition: $main-transition;
+        }
+        input:focus {
+          outline: none;
+          border: 2px solid $primary-color;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+
+        // validation sing
+        i {
+          position: absolute;
+          top: 42px;
+          right: 20px;
+          visibility: hidden;
+        }
+
+        // client side validation error message
+        small {
+          font-size: 0.8rem;
+          font-family: cursive;
+          color: $danger-color;
+          visibility: hidden;
+        }
+
+        // input option / select
+        select {
+          width: 100%;
+          padding: 10px;
+          border: 2px solid $inverse-color;
+          font-size: 1rem;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          transition: $main-transition;
+          -webkit-transition: $main-transition;
+          -moz-transition: $main-transition;
+          -ms-transition: $main-transition;
+          -o-transition: $main-transition;
+        }
+        select:focus {
+          outline: none;
+          border: 2px solid $primary-color;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+
+        // input option / textarea
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 2px solid $inverse-color;
+          font-size: 1rem;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          transition: $main-transition;
+          -webkit-transition: $main-transition;
+          -moz-transition: $main-transition;
+          -ms-transition: $main-transition;
+          -o-transition: $main-transition;
+        }
+        textarea:focus {
+          outline: none;
+          border: 2px solid $primary-color;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+
+        // agree TAC
+        #agree-tac {
+          position: absolute;
+          right: 222px;
+          margin-top: 5px;
+        }
+        .message-tac {
+          font-size: 1.1rem;
+          margin-left: 20px;
+          margin-bottom: 10px;
+        }
+      }
+
+      // client side validation style
+      // validation success
+      .form-control.success {
+        label {
+          color: $success-color;
+        }
+        input {
+          border: 2px solid $success-color;
+        }
+        i.uil-check-circle {
+          visibility: visible;
+          color: $success-color;
+        }
+        .uil-exclamation-circle {
+          visibility: hidden;
+        }
+      }
+
+      // validation error
+      .form-control.error {
+        label {
+          color: $danger-color;
+        }
+        input {
+          border: 2px solid $danger-color;
+        }
+        i.uil-check-circle {
+          visibility: hidden;
+        }
+        .uil-exclamation-circle {
+          visibility: visible;
+          color: $danger-color;
+        }
+        small {
+          visibility: visible;
+        }
+      }
+
+      // submit button
+      button.submit {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 20px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        margin-left: 50px;
+        background-color: $white-color;
+        border: 2px solid $inverse-color;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: $black-color;
+        transition: $main-transition;
+        -webkit-transition: $main-transition;
+        -moz-transition: $main-transition;
+        -ms-transition: $main-transition;
+        -o-transition: $main-transition;
+        cursor: pointer;
+      }
+      button.submit:hover {
+        color: $white-color;
+        background-color: $primary-color;
+        border: 2px solid $primary-color;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+      }
+
+      // submit button disabled
+      button.disabled {
+        color: $gray-color;
+        border: 2px solid $gray-color;
+      }
+      button.disabled:hover {
+        color: $inverse-color;
+        background-color: $white-color;
+        border: 2px solid $inverse-color;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+    }
+  }
+}
