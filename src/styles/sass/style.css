@@ -1,0 +1,57 @@
+/* IMPORT VARIABLE & UNIVERSAL SELECTOR */
+/* =============== COLORS =============== */
+/* =============== TRANSITIONS =============== */
+/* =============== GOOGLE FONTS =============== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* =============== RESET BROWSER =============== */
+* {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* html {
+  scroll-behavior: smooth;
+}
+
+* html body {
+  font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+  background-color: #e0dfdb;
+}
+
+/* =============== PRE TAG-SELECTORS =============== */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* =============== PRE ATTRIBUTE-SELECTORS */
+::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--gray-color);
+  font-family: cursive;
+  font-size: 14px;
+}
+:-ms-input-placeholder {
+  opacity: 1;
+  color: var(--gray-color);
+  font-family: cursive;
+  font-size: 14px;
+}
+::-ms-input-placeholder {
+  opacity: 1;
+  color: var(--gray-color);
+  font-family: cursive;
+  font-size: 14px;
+}
+::placeholder {
+  opacity: 1;
+  color: var(--gray-color);
+  font-family: cursive;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */

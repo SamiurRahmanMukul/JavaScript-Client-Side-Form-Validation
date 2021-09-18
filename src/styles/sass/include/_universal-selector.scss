@@ -1,0 +1,34 @@
+/* =============== GOOGLE FONTS =============== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* =============== RESET BROWSER =============== */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+  html {
+    scroll-behavior: smooth;
+
+    body {
+      font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+      background-color: $stainless-steel;
+    }
+  }
+}
+
+/* =============== PRE TAG-SELECTORS =============== */
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* =============== PRE ATTRIBUTE-SELECTORS */
+::placeholder {
+  opacity: 1;
+  color: var(--gray-color);
+  font-family: cursive;
+  font-size: 14px;
+}
